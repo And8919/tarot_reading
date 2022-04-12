@@ -25,28 +25,28 @@
 
 '''
 cards = {
-    0: ' " " Le Mat', 
-    1: 'I Le Bateleur', 
-    2: 'II La Papesse', 
+    0: ' " " I Matto', 
+    1: 'I Il Bagatto', 
+    2: 'II La Papessa', 
     3: 'III L\'Imperatrice', 
-    4: 'IIII L\'Empereur', 
-    5: 'V Le Pape', 
-    6: 'VI L\'Amoureux',
-    7: 'VII Le Chariot',
-    8: 'VIII La Justice',
-    9: 'VIIII L\'Heremite',
-    10: 'X La Rode de Fortune',
-    11: 'XI La Force',
-    12: 'XII Le Pendu',
+    4: 'IIII L\'Imperatore', 
+    5: 'V Il Papa', 
+    6: 'VI Gli Anamanti',
+    7: 'VII Il Carro',
+    8: 'VIII La Giustizia',
+    9: 'VIIII L\'Eremita',
+    10: 'X La Ruota della Fortuna',
+    11: 'XI La Forza',
+    12: 'XII L\'Appeso',
     13: 'XIII ',
-    14: 'XIIII Temperance',
-    15: 'XV Le Diable',
-    16: 'XVI La Maison Diev',
-    17: 'XVII Le Toille',
-    18: 'XVIII La Lune',
-    19: 'XVIIII Le Soleil',
-    20: 'XX Le Iugement',
-    21: 'XI Le Monde'
+    14: 'XIIII La Temperanza',
+    15: 'XV Il Diavolo',
+    16: 'XVI La Torre',
+    17: 'XVII La Stella',
+    18: 'XVIII La Luna',
+    19: 'XVIIII Il Sole',
+    20: 'XX Il Giudizio',
+    21: 'XI Il Mondo'
     }
 
 definitions = {
