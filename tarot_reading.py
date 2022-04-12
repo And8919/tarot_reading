@@ -24,6 +24,19 @@
  5. scrivere la lettura per ogni carta
 
 '''
+
+import random
+
+class User:
+    pass
+
+
+class Deck:
+    pass
+
+class Deck:
+    pass
+
 cards = {
     0: ' " " - Il Matto', 
     1: 'I - Il Bagatto', 
@@ -50,39 +63,55 @@ cards = {
     }
 
 definitions = {
-0: 'Va con ciò che posside in giro per il Mondo confiducia.',
-1: 'Ha tutto in mano, ha tutte le possibilità. Sta a lui a sceglire la cosa giusta per raggiungere il suo scopo',
-2: 'Sta studiando, è ancora ferma. E\' un momento di stasi.',
-3: 'Energia femminile allo stato puro',
-4: 'Potere in terra. Potere materiale.',
-5: 'Collegamento tra il terreno e il divino. Carta di passaggio ad un piano superiore.',
-6: 'La scelta. Ad esempio tra vecchio e nuovo.',
-7: 'la dimostrazione del proprio successo.',
-8: 'Tutto ciò che è inerente alla giustizia.',
-9: 'Ti invita a far luce sul passato',
-10: 'Momento di stallo che ha bisogno di un qualcosa per ripartire(la ruota)',
-11: 'Indica la forza morale, interiore.',
-12: 'Ci sono problemi da risolvere con il tuo albero genealogico',
-13: 'La trasformazione',
-14: 'La guarigione',
-15: 'Gli eccessi (ribellione, anticonformismo, riuscire a vedere oltre etc.)',
-16: 'Rappresenta il tuo corpo. Può essere una grande festa oppure l\'uscita da qualcosa di brutto',
-17: 'Il tuo posto.',
-18: 'La madre; rappresenta tutte le cose nascoste, interiori, profonde',
-19: 'Il padre; rappresenta tutto ciò che c\'è fuori',
-20: 'Il giudizio o la chiamata',
-21: 'Il completamento del tutto'
-}
-
-num = []
-
-
-for x in cards:
-    num.append(x)
+    0: 'Va con ciò che posside in giro per il Mondo confiducia.',
+    1: 'Ha tutto in mano, ha tutte le possibilità. Sta a lui a sceglire la cosa giusta per raggiungere il suo scopo',
+    2: 'Sta studiando, è ancora ferma. E\' un momento di stasi.',
+    3: 'Energia femminile allo stato puro',
+    4: 'Potere in terra. Potere materiale.',
+    5: 'Collegamento tra il terreno e il divino. Carta di passaggio ad un piano superiore.',
+    6: 'La scelta. Ad esempio tra vecchio e nuovo.',
+    7: 'la dimostrazione del proprio successo.',
+    8: 'Tutto ciò che è inerente alla giustizia.',
+    9: 'Ti invita a far luce sul passato',
+    10: 'Momento di stallo che ha bisogno di un qualcosa per ripartire(la ruota)',
+    11: 'Indica la forza morale, interiore.',
+    12: 'Ci sono problemi da risolvere con il tuo albero genealogico',
+    13: 'La trasformazione',
+    14: 'La guarigione',
+    15: 'Gli eccessi (ribellione, anticonformismo, riuscire a vedere oltre etc.)',
+    16: 'Rappresenta il tuo corpo. Può essere una grande festa oppure l\'uscita da qualcosa di brutto',
+    17: 'Il tuo posto.',
+    18: 'La madre; rappresenta tutte le cose nascoste, interiori, profonde',
+    19: 'Il padre; rappresenta tutto ciò che c\'è fuori',
+    20: 'Il giudizio o la chiamata',
+    21: 'Il completamento del tutto'
+    }
 
 
 
-for x in num:
-    print(cards[x] + ' : ' + definitions[x])
+
+space = ' ' * 6
+card1 = cards[random.randint(1, 21)]
+card2 = cards[random.randint(1, 21)]
+card3 = cards[random.randint(1, 21)]
 
 
+
+
+
+
+
+
+while True:
+    card1 = cards[random.randint(1, 21)]
+    card2 = cards[random.randint(1, 21)]
+    card3 = cards[random.randint(1, 21)]
+    if card1 == card2 or card1 == card3 or card2 == card3:
+        card1 = cards[random.randint(1, 21)]
+        card2 = cards[random.randint(1, 21)]
+        card3 = cards[random.randint(1, 21)]
+    else:
+        print(card1 + space + card2 + space + card3)
+        break
+
+print('out of loop')
