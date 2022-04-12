@@ -25,28 +25,28 @@
 
 '''
 cards = {
-    0: ' " " I Matto', 
-    1: 'I Il Bagatto', 
-    2: 'II La Papessa', 
-    3: 'III L\'Imperatrice', 
-    4: 'IIII L\'Imperatore', 
-    5: 'V Il Papa', 
-    6: 'VI Gli Anamanti',
-    7: 'VII Il Carro',
-    8: 'VIII La Giustizia',
-    9: 'VIIII L\'Eremita',
-    10: 'X La Ruota della Fortuna',
-    11: 'XI La Forza',
-    12: 'XII L\'Appeso',
-    13: 'XIII ',
-    14: 'XIIII La Temperanza',
-    15: 'XV Il Diavolo',
-    16: 'XVI La Torre',
-    17: 'XVII La Stella',
-    18: 'XVIII La Luna',
-    19: 'XVIIII Il Sole',
-    20: 'XX Il Giudizio',
-    21: 'XI Il Mondo'
+    0: ' " " - Il Matto', 
+    1: 'I - Il Bagatto', 
+    2: 'II - La Papessa', 
+    3: 'III - L\'Imperatrice', 
+    4: 'IIII - L\'Imperatore', 
+    5: 'V - Il Papa', 
+    6: 'VI - Gli Anamanti',
+    7: 'VII - Il Carro',
+    8: 'VIII - La Giustizia',
+    9: 'VIIII - L\'Eremita',
+    10: 'X - La Ruota della Fortuna',
+    11: 'XI - La Forza',
+    12: 'XII - L\'Appeso',
+    13: 'XIII - Senza Nome',
+    14: 'XIIII - La Temperanza',
+    15: 'XV - Il Diavolo',
+    16: 'XVI - La Torre',
+    17: 'XVII - La Stella',
+    18: 'XVIII - La Luna',
+    19: 'XVIIII - Il Sole',
+    20: 'XX - Il Giudizio',
+    21: 'XI - Il Mondo'
     }
 
 definitions = {
@@ -72,9 +72,17 @@ definitions = {
 19: 'Il padre; rappresenta tutto ciò che c\'è fuori',
 20: 'Il giudizio o la chiamata',
 21: 'Il completamento del tutto'
-
-
-
-
-
 }
+
+num = []
+
+
+for x in cards:
+    num.append(x)
+
+
+
+for x in num:
+    print(cards[x] + ' : ' + definitions[x])
+
+
