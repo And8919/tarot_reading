@@ -1,30 +1,3 @@
-'''
-0. Intro --> Le carte danno un aiuto su come poter affrontare
-    un problema, non fanno divinazione. La domanda domande deve essere: 
-    come posso fare per uscire da una determ. situazione?
-1. creare le carte
-2. una descrizione per ogni carta richiamabile con un comando
-3. far pescare le carte da 1 o 3
-3.1 se una carta, scrivere il significato in sintesi
-3.2 se tre carte, pass, pres, fut
-4. mandarle in stampa con questo formato:
- ----------------
-|                |
-|                |
-|                |
-|                |      
-|      carta     |
-|                |
-|                |
-|                |
-|                |
-|                |
- ----------------
-
- 5. scrivere la lettura per ogni carta
-
-'''
-
 import random
 
 class User:
@@ -93,7 +66,7 @@ definitions = {
 
 ### TEST AREA ###
 
-#scelta carte gioco pass pres fut
+#scelta carte gioco pass pres fut evitando che siano uguali
 space = ' ' * 6
 while True:
     card1 = cards[random.randint(1, 21)]
@@ -121,4 +94,18 @@ def card_print():
         print(('|' + ' ' * len(space_card1 + card1 + space_card1) + '|' + '  ') + ('|' + ' ' * len(space_card2 + card2 + space_card2) + '|' + '  ') + ('|' + ' ' * len(space_card3 + card3 + space_card3) + '|' + '  '))
     print((' ' + '-' * len(space_card1 + card1 + space_card1) + ' ' + '  ') + (' ' + '-' * len(space_card2 + card2 + space_card2) + ' ' + '  ') + (' ' + '-' * len(space_card3 + card3 + space_card3) + ' '))
 
+def read():
+    index_card = []
+    for element in cards.values():
+        index_card.append(element)
+    print('\nLettura delle carte\n')
+    print(card1 + ' - ' + definitions[index_card.index(card1)])
+    print(card2 + ' - ' + definitions[index_card.index(card2)])
+    print(card3 + ' - ' + definitions[index_card.index(card3)])
+
+    
+
+
+
 card_print()
+read()
