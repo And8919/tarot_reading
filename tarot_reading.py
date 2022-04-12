@@ -104,24 +104,21 @@ while True:
         card2 = cards[random.randint(1, 21)]
         card3 = cards[random.randint(1, 21)]
     else:
-        print(card1 + space + card2 + space + card3)
+        #print(card1 + space + card2 + space + card3)
         break
-
-print('out of loop')
 
 # funzione stampa carta
 def card_print():
-    print((' ' + '-' * 28 + ' ' * 3) * 3)
-    for x in range(10):
-        print(('|' + ' ' * 28 + '|' + '  ') * 3)
-
     space_card1 = round(((28 - len(card1)) / 2)) * ' '
     space_card2 = round(((28 - len(card2)) / 2)) * ' '
     space_card3 = round(((28 - len(card3)) / 2)) * ' '
+    print((' ' + '-' * len(space_card1 + card1 + space_card1) + ' ' + '  ') + (' ' + '-' * len(space_card2 + card2 + space_card2) + ' ' + '  ') + (' ' + '-' * len(space_card3 + card3 + space_card3) + ' '))
 
+    for x in range(10):
+        print(('|' + ' ' * len(space_card1 + card1 + space_card1) + '|' + '  ') + ('|' + ' ' * len(space_card2 + card2 + space_card2) + '|' + '  ') + ('|' + ' ' * len(space_card3 + card3 + space_card3) + '|' + '  '))        
     print('|' + space_card1 + card1 + space_card1 + '|' + '  ' + '|' + space_card2 + card2 + space_card2 + '|' + '  ' + '|' + space_card3 + card3 + space_card3 + '|' + '  ')
     for x in range(10):
-        print(('|' + ' ' * 28 + '|' + '  ') * 3)
-    print((' ' + '-' * 28 + ' ' * 3) * 3)
+        print(('|' + ' ' * len(space_card1 + card1 + space_card1) + '|' + '  ') + ('|' + ' ' * len(space_card2 + card2 + space_card2) + '|' + '  ') + ('|' + ' ' * len(space_card3 + card3 + space_card3) + '|' + '  '))
+    print((' ' + '-' * len(space_card1 + card1 + space_card1) + ' ' + '  ') + (' ' + '-' * len(space_card2 + card2 + space_card2) + ' ' + '  ') + (' ' + '-' * len(space_card3 + card3 + space_card3) + ' '))
 
 card_print()
