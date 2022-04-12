@@ -1,17 +1,31 @@
 import random
 
 class User:
-    pass
+    def __init__(self, name):
+        self.name = name
+    
+    def __repr__(self):
+        return 'Ciao, ' + self.name + '. Scegli il "gioco" che vuoi fare.'
 
 
-class Deck:
-    pass
+#def meaning(card):
+  #Return definitions[card.id]
 
-class Deck:
-    pass
+""" class Deck:
+    def __init__(self, game):
+        self.game = game
+
+    def play(self):
+        print('Ciao ' + self.name + )
+ """
+   #     if self.game == game1: continuare, specificare game 1 game 2 etc.
+
+
+
+
 
 cards = {
-    0: ' " " - Il Matto', 
+    0: '" " - Il Matto', 
     1: 'I - Il Bagatto', 
     2: 'II - La Papessa', 
     3: 'III - L\'Imperatrice', 
@@ -103,9 +117,9 @@ def read():
     print(card2 + ' - ' + definitions[index_card.index(card2)])
     print(card3 + ' - ' + definitions[index_card.index(card3)])
 
-    
 
-
-
+#esecuzione
+player = User(input('Come ti chiami? '))
+print(player)
 card_print()
 read()
