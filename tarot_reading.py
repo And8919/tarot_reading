@@ -35,10 +35,12 @@ cards = {
     11: 'La Force',
     12: 'Le Pendu',
     13: '',
-    
-    
-    
-    
-    
-    
+    14: 'Temperance',
+    15: 'Le Diable',
+    16: 'La Maison Diev',
+    17: 'Le Toille',
+    18: 'La Lune',
+    19: 'Le Soleil',
+    20: 'Le Iugement',
+    21: 'Le Monde'
     }
